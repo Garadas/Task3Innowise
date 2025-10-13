@@ -209,8 +209,6 @@ namespace quest3.UI
                 ShowError($"Ошибка при изменении статуса: {ex.Message}");
             }
         }
-
-        #region Helper Methods
         private void DisplayTaskItem(TaskItem taskitem)
         {
             var status = taskitem.IsCompleted ? "[complete]" : "[ ]";
@@ -276,6 +274,5 @@ namespace quest3.UI
             if (success) ShowSuccess(successMessage);
             else ShowError(errorMessage);
         }
-        #endregion
     }
 }
